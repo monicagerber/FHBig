@@ -16,8 +16,8 @@ knitr::opts_chunk$set(echo = TRUE)
 __Major uses__  
 
 - construction of self-describing data classes, (easier to store and share)
-- functions and methods to handle the different manipulations to performed on teh objects
-- more maintainable and reliable packges  
+- functions and methods to handle the different manipulations to performed on the objects
+- more maintainable and reliable packages  
 
 __Supports__  
 
@@ -40,12 +40,12 @@ __S3__ (1992)
 __S4__ (1998, 2008)
 
 - overcome many deficiencies of S3
-- explicited defined classes and generic function
+- explicitly defined classes and generic function
 - multiple inheritance
 - increased complexity of use
 
 ## S3: generic functions 
-A generic function has a single expression wich is the call to `UseMethod`.
+A generic function has a single expression which is the call to `UseMethod`.
 ```{r S3_method}
 #' print() is a generic function
 print
@@ -341,7 +341,7 @@ Bioconductor packages used for this presentation
   - chrom, character vector indicating the chromsome 
   - pos, integer indicating the position in the chromsome
 
-2. Set validationg such that all slots ahve the some length
+2. Set validationg such that all slots have the same length
 3. Define `length` method 
 
 ```{r do_excercise, echo=FALSE, include=FALSE}
@@ -387,7 +387,7 @@ length(snplocs)
 sessionInfo()
 ```
 
-## Reference
+## References
 
 - The _R Programming fro Bioinformatics_ by Robert Gentleman  
 - The _Writing R Extensions manual_ 
@@ -395,5 +395,9 @@ sessionInfo()
   https://bioconductor.org/packages/release/bioc/vignettes/S4Vectors/inst/doc/S4QuickOverview.pdf    
 - Bioconductor training courses:
   https://master.bioconductor.org/help/course-materials/2017/Zurich/S4-classes-and-methods.html
-
+- _Advanced R_ (2nd ed.) by Hadley Wickham has 4 chapters:
+    + S3: https://adv-r.hadley.nz/s3.html
+    + S4: https://adv-r.hadley.nz/s4.html
+    + R6: https://adv-r.hadley.nz/r6.html
+    + Trade-offs: https://adv-r.hadley.nz/oo-tradeoffs.html
 
